@@ -1,0 +1,54 @@
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ბოსტნეულის მაღაზია</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ბოსტნეულის მაღაზია</h1>
+    <div class="gallery">
+        <img src="carrot1.jpg" alt="Carrot" class="vegetable" id="carrot" onclick="changeImage('carrot')">
+        <img src="tomato1.jpg" alt="Tomato" class="vegetable" id="tomato" onclick="changeImage('tomato')">
+        <img src="potato1.jpg" alt="Potato" class="vegetable" id="potato" onclick="changeImage('potato')">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>დავირუსებული საიტი</title>
+    <script>
+        function showVirusAlert() {
+            alert("შენთვის მნიშვნელოვან ინფორმაციას ვირუსებით გაივსო! შეამოწმეთ თქვენი კომპიუტერი!");
+        }
+
+        function cleanVirus() {
+            alert("ყველა ვირუსი გასუფთავდა!");
+        }
+    </script>
+</head>
+<body>
+    <h1>გამარჯობა! ასე ვთქვათ, შენი კომპიუტერი ვირუსებითაა გამიზნული.</h1>
+    
+    <button onclick="showVirusAlert()">ღილაკი 1</button>
+    <button onclick="showVirusAlert()">ღილაკი 2</button>
+    <button onclick="showVirusAlert()">ღილაკი 3</button>
+    <button onclick="showVirusAlert()">ღილაკი 4</button>
+    <button onclick="cleanVirus()">ღილაკი ხუთი (გასუფთავება)</button>
+</body>
+</html>

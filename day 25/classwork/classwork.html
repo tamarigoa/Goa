@@ -1,0 +1,30 @@
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ფოტოების შეცვლა</title>
+    <style>
+        img {
+            width: 200px;
+            height: auto;
+            cursor: pointer;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ფოტოები</h1>
+    <img src="photo1.jpg" alt="Photo 1" onclick="changeImage(this, 'newPhoto1.jpg')" />
+    <img src="photo2.jpg" alt="Photo 2" onclick="changeImage(this, 'newPhoto2.jpg')" />
+    <img src="photo3.jpg" alt="Photo 3" onclick="changeImage(this, 'newPhoto3.jpg')" />
+
+    <script>
+        function changeImage(imgElement, newSrc) {
+            imgElement.src = newSrc;
+            alert("GOA BEST");
+        }
+    </script>
+
+</body>
+</html>
