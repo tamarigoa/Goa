@@ -1,0 +1,44 @@
+.my-title {
+    color: blue; /* ფერი */
+    background-color: lightyellow; /* ფონის ფერი */
+    text-align: center; /* განლაგება */
+    font-size: 25px; /* ტექსტის ზომა */
+    font-weight: bold; /* ტექსტის სისქე */
+    border: 2px solid black; /* საზღვარი */
+}
+
+
+
+
+.custom-div {
+    background-color: #f0f8ff; 
+    color: #333;                
+    display: flex;              
+    flex-direction: column;     
+    align-items: center;        
+    padding: 20px;              
+    border: 2px solid #ff6347;  
+    border-radius: 10px;      
+    width: 50%;                 
+    margin: 50px auto;          
+}
+
+.custom-div h1 {
+    font-size: 28px;            
+    font-weight: bold;          
+    color: #2e8b57;            
+}
+
+
+.custom-div h2 {
+    font-size: 24px;           
+    font-weight: normal;        
+    color: #4682b4;             
+}
+
+
+.custom-div p {
+    font-size: 18px;            
+    font-weight: light;       
+    color: #000;                
+}

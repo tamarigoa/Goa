@@ -1,0 +1,178 @@
+.parent {
+    color: blue;
+}
+.overrride {
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+.p, h1, button {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.button {
+    background-color: green;
+    border: none;
+    cursor: pointer;
+}
+
+
+.button:hover {
+    background-color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: darkblue;
+    color: white;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .join-btn {
+    padding: 10px 20px;
+    background-color: skyblue;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .join-btn:hover {
+    background-color: blue;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .hero h2 {
+    color: skyblue;
+    font-size: 1.2rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin: 20px ;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .cta-buttons {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+  }
+  
+  .primary-btn {
+    background-color: skyblue;
+    color: white;
+  }
+  
+  .secondary-btn {
+    background-color: transparent;
+    color: blue;
+    border: 2px solid lightblue;
+  }
+  
+  .primary-btn:hover {
+    background-color: blue;
+  }
+  
+  .secondary-btn:hover {
+    background-color: white;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+  }
+  
+  .feature-card {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+  }
+  
+  .feature-card .icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .feature-card p {
+    font-size: 0.9rem;
+    color: gray;
+  }
