@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Formatting</title>
+    <style>
+        p {
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h1 {
+            text-decoration: overline;
+        }
+
+
+        span {
+            text-decoration: line-through;
+        }
+
+            h2 {
+            text-decoration: underline overline;
+        }
+
+        a.dashed {
+            text-decoration: underline dashed;
+        }
+
+        p.warning {
+            text-decoration: underline wavy;
+        }
+
+        .nav {
+            text-transform: uppercase;
+        }
+
+        h3 {
+            text-shadow: 2px 2px 5px gray;
+        }
+
+        h4 {
+            text-shadow: 2px 2px 5px black;
+        }
+
+        p.shadow {
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        p.red-shadow {
+            text-shadow: 2px 2px 5px red;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        .google-font {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
+        .heading {
+            font-family: 'Merriweather', serif;
+        }
+        .body-text {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <p>ეს არის ხაზგასმული ტექსტი.</p>
+    <a href="#">ეს არის ბმული ხაზგასმის გარეშე</a>
+    <h1>ეს არის ზედა ხაზგასმული ტექსტი</h1>
+    <span>ეს არის ხაზგადასმული ტექსტი</span>
+    <h2>ეს ტექსტი ზედა და ქვედა ხაზგასმულია</h2>
+    <a href="#" class="dashed">წყვეტილი ხაზგასმა</a>
+    <p class="warning">გაფრთხილების ტექსტი ტალღოვანი ხაზგასმით</p>
+    <nav class="nav">მთავარი გვერდი | კონტაქტი</nav>
+    <h3>ეს არის მსუბუქი ჩრდილებით</h3>
+    <h4>ეს არის შავი მკვეთრი ჩრდილი</h4>
+    <p class="shadow">ეს არის დაბლარული ჩრდილი</p>
+    <p class="red-shadow">ეს არის წითელი ჩრდილი</p>
+    <p class="google-font">ეს არის Google Fonts-ით გაფორმებული ტექსტი</p>
+    <h2 class="heading">სათაურის ფონტი</h2>
+    <p class="body-text">სხეულის ტექსტი</p>
+
+</body>
+</html>
