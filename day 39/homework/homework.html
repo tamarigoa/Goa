@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form</title>
+    <style>
+      
+        input {
+            border: 2px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+   
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+      
+        input:focus {
+            border-color: #4CAF50;
+            background-color: #e8f5e9;
+        }
+
+        .error {
+            color: red;
+            margin-top: 5px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        .error::before {
+            content: "❌";
+            margin-right: 5px;
+        }
+
+        
+        .container {
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        
+        .custom-padding {
+            padding: 20px 15px 10px 25px;
+        }
+
+        
+        .box-with-border {
+            border: 3px solid #4CAF50;
+            padding: 15px;
+        }
+
+        .rounded-corners {
+            border-radius: 10px;
+            border: 2px solid #ccc;
+            padding: 15px;
+        }
+
+      
+        p {
+            margin: 15px 0;
+        }
+       
+        .styled-button {
+            padding: 12px 20px;
+            border: 2px solid #4CAF50;
+            background-color: transparent;
+            color: #4CAF50;
+            cursor: pointer;
+        }
+
+        .shadowed-box {
+            border: 2px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .negative-margin {
+            margin-left: -10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+   
+    <div class="custom-padding">
+        <h3>Styled Form</h3>
+
+        
+        <input type="text" placeholder="Enter your name" />
+
+      
+        <div class="error">This field is required</div>
+
+       
+        <div class="box-with-border">
+            This is a box with a border.
+        </div>
+
+       
+        <div class="rounded-corners">
+            This box has rounded corners.
+        </div>
+
+        <p>This is a paragraph with margins.</p>
+
+       
+        <button class="styled-button">Click Me</button>
+
+        <div class="shadowed-box">
+            This box has a shadowed border.
+        </div>
+
+        
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        
+        <div class="negative-margin">
+            This element has negative left margin.
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
