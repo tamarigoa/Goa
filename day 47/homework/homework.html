@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning Examples</title>
+    <style>
+      
+        .center-div {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+       
+        .right-img-container {
+            text-align: right;
+        }
+
+        
+        .sticky-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .box {
+            width: 200px;
+            height: 300px;
+            background-color: lightgray;
+            position: relative;
+            margin: 50px auto;
+        }
+
+        .btn {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+        }
+
+       
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+   
+        .move-up {
+            position: relative;
+            top: -20px;
+            background-color: coral;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box1, .box2 {
+            width: 45%;
+            height: 100px;
+            background-color: lightgreen;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        / 9. Float an Image to the Left /
+        .float-img {
+            float: left;
+            margin-right: 10px;
+        }
+   
+        .spaced-boxes {
+            display: flex;
+            gap: 20px;
+        }
+
+        .spaced-box {
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+   
+    <div class="center-div">Centered Div</div>
+
+
+    <div class="right-img-container">
+        <img src="https://www.google.com/imgres?q=goal%20oriented%20academy&imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D100083199135349&imgrefurl=https%3A%2F%2Fwww.facebook.com%2Fnika11keshelava%2F&docid=S2TLGu1XdmYaTM&tbnid=7HDa-WLyuHbtDM&vet=12ahUKEwjD3srBmZOMAxUsRfEDHfwkAmIQM3oECBQQAA..i&w=2048&h=1463&hcb=2&ved=2ahUKEwjD3srBmZOMAxUsRfEDHfwkAmIQM3oECBQQAA" alt="Example Image">
+    </div>
+
+  
+    <div class="sticky-header">Sticky Header</div>
+
+    
+    <div class="box">
+        <button class="btn">Click Me</button>
+    </div>
+
+  
+    <div class="image-container">
+        <img src="https://www.google.com/imgres?q=goal%20oriented%20academy&imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D476523918464242&imgrefurl=https%3A%2F%2Fwww.facebook.com%2Fnika11keshelava%2F&docid=S2TLGu1XdmYaTM&tbnid=1SnFMtVtPDv4TM&vet=12ahUKEwjD3srBmZOMAxUsRfEDHfwkAmIQM3oECGgQAA..i&w=2048&h=1269&hcb=2&ved=2ahUKEwjD3srBmZOMAxUsRfEDHfwkAmIQM3oECGgQAA" alt="Example Image">
+        <div class="text-overlay">Overlay Text</div>
+    </div>
+
+   
+    <div class="footer">Fixed Footer</div>
+
+
+    <div class="move-up">Moved Up Box</div>
+
+    <div class="container">
+        <div class="box1">Box 1</div>
+        <div class="box2">Box 2</div>
+    </div>
+
+    
+    <p>
+        <img src="https://www.google.com/imgres?q=goal%20oriented%20academy&imgurl=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2Fv2%2FD4E16AQFU2hLlbYXvAA%2Fprofile-displaybackgroundimage-shrink_200_800%2Fprofile-displaybackgroundimage-shrink_200_800%2F0%2F1704116488954%3Fe%3D2147483647%26v%3Dbeta%26t%3DH1lSD4R7WY_RyMIlalaqKG9YUiP6mNkRr2gYIcW7BW0&imgrefurl=https%3A%2F%2Fge.linkedin.com%2Fin%2Fgoal-oriented-academy-goa-728a252a7&docid=1BFgjeTLqBz5SM&tbnid=2Uh815HQ7ELZDM&vet=12ahUKEwjD3srBmZOMAxUsRfEDHfwkAmIQM3oECBUQAA..i&w=800&h=200&hcb=2&ved=2ahUKEwjD3srBmZOMAxUsRfEDHfwkAmIQM3oECBUQAA" alt="Example Image" class="float-img">
+        This is a paragraph with an image floating to the left. The text will wrap around it.
+    </p>
+
+    <div class="spaced-boxes">
+        <div class="spaced-box">Box A</div>
+        <div class="spaced-box">Box B</div>
+    </div>
+
+</body>
+</html>

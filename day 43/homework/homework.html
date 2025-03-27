@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 1</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-rows: 50px auto 50px;
+            grid-template-columns: 3fr 1fr 1fr;
+            grid-template-areas:
+                "header header header"
+                "article aside nav"
+                "footer footer footer";
+            height: 100vh;
+        }
+        header {
+            grid-area: header;
+            background: #a5cd39;
+            text-align: left;
+            padding: 10px;
+        }
+        article {
+            grid-area: article;
+            background: white;
+            padding: 10px;
+        }
+        aside {
+            grid-area: aside;
+            background: #f7f7da;
+            padding: 10px;
+        }
+        nav {
+            grid-area: nav;
+            background: #d2e4cd;
+            padding: 10px;
+        }
+        footer {
+            grid-area: footer;
+            background: #a5cd39;
+            text-align: left;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Header</header>
+        <article>Article</article>
+        <aside>Aside</aside>
+        <nav>Nav</nav>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 2</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        header, .hero, .content, .sidebar, footer {
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+        header { background: #0099ff; }
+        .hero { background: #d00000; flex: 2; }
+        .content { background: #008000; flex: 3; }
+        .sidebar { background: #6a0dad; flex: 1; }
+        footer { background: #444; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Header</header>
+        <div class="hero">Hero</div>
+        <div class="content">Content</div>
+        <div class="sidebar">Sidebar</div>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 3</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #808080;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+        .item {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            border: 2px solid black;
+        }
+        .item:nth-child(1) { background: #0099ff; }
+        .item:nth-child(2) { background: #00cc66; }
+        .item:nth-child(3) { background: #d00000; }
+        .item:nth-child(4) { background: #ffa500; }

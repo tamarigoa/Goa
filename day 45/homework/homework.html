@@ -1,0 +1,58 @@
+
+<html>
+<head>
+  <style>
+   
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; 
+      flex-wrap: wrap; 
+      width: 100%; 
+      height: 100vh; 
+      flex-direction: row-reverse; 
+    }
+
+
+    .flex-item {
+      flex: 1; 
+      text-align: center; 
+      padding: 10px;
+      background-color: lightblue;
+      margin: 5px;
+    }
+
+    .flex-item.grow {
+      flex: 2;
+    }
+
+    .flex-item.bottom {
+      align-self: flex-end; 
+    }
+
+    
+    .flex-item.equal-width {
+      flex: 1;
+    }
+
+    .flex-container.center {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flex-container.column {
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="flex-container column">
+    <!-- Flex items -->
+    <div class="flex-item equal-width">Item 1</div>
+    <div class="flex-item grow">Item 2 (grows twice)</div>
+    <div class="flex-item bottom">Item 3 (aligned bottom)</div>
+  </div>
+
+</body>
+</html>
